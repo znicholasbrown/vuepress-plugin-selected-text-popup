@@ -52,7 +52,7 @@
 
 <script>
 /* global GITHUB, GITHUB_OWNER, GITHUB_REPO, GITHUB_ISSUE_TITLE, GITHUB_LABELS, TWITTER */
-import GlobalEvents from './node_modules/vue-global-events'
+import GlobalEvents from 'vue-global-events'
 
 export default {
   components: {

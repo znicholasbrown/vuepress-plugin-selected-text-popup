@@ -1,0 +1,24 @@
+{
+  "name": "vuepress-plugin-selected-text-popup",
+  "version": "0.0.1",
+  "description": "A global plugin for Vuepress that creates a popup on selecting text!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/znicholasbrown/vuepress-plugin-selected-text-popup.git"
+  },
+  "keywords": [
+    "vuepress",
+    "vuepress-plugin",
+    "selected-text"
+  ],
+  "author": "znicholasbrown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/znicholasbrown/vuepress-plugin-selected-text-popup/issues"
+  },
+  "homepage": "https://github.com/znicholasbrown/vuepress-plugin-selected-text-popup#readme"
+}

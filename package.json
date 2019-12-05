@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/znicholasbrown/vuepress-plugin-selected-text-popup/issues"
   },
-  "homepage": "https://github.com/znicholasbrown/vuepress-plugin-selected-text-popup#readme"
+  "homepage": "https://github.com/znicholasbrown/vuepress-plugin-selected-text-popup#readme",
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  }
 }

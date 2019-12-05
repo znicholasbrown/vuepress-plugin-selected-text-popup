@@ -9,9 +9,9 @@
             tooltip
             tooltip-content="Problem with the docs? Create a GitHub Issue!"
             :href="
-              `https://github.com/${githubOwner}/${githubRepo}/issues/new?title=${githubIssueTitle}&body=${encodeURI(
+              `https://github.com/${githubOwner}/${githubRepo}/issues/new?title=${githubIssueTitle}&body=Hello!%20I've%20found%20an%20issue%20with%20the%20docs%20here:\`${encodeURI(
                 selectedText
-              )}&labels=${githubLabels.toString()}`
+              )}\`&labels=${githubLabels.toString()}`
             "
             target="_blank"
           >

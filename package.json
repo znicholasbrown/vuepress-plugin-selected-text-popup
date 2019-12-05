@@ -26,5 +26,10 @@
     "tabWidth": 2,
     "semi": false,
     "singleQuote": true
+  },
+  "dependencies": {
+    "vue": "^2.6.10",
+    "vue-global-events": "^1.1.2",
+    "vuepress": "^1.2.0"
   }
 }

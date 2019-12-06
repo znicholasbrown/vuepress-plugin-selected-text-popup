@@ -7,13 +7,8 @@
           <a
             v-if="github"
             tooltip
-            tooltip-content="Problem with the docs? Create a GitHub Issue!"
-            :href="
-              `https://github.com/${githubOwner}/${githubRepo}/issues/new?title=${githubIssueTitle}&body=Hello!%20I've%20found%20an%20issue%20with%20the%20docs%20here:\`${encodeURI(
-                selectedText
-              )}\`&labels=${githubLabels.toString()}`
-            "
-            target="_blank"
+            :tooltip-content="githubTooltipContent"
+            @click="redirectToGithub"
           >
             <svg
               width="28"
@@ -51,7 +46,7 @@
 </template>
 
 <script>
-/* global GITHUB, GITHUB_OWNER, GITHUB_REPO, GITHUB_ISSUE_TITLE, GITHUB_LABELS, TWITTER */
+/* global GITHUB, GITHUB_OWNER, GITHUB_REPO, GITHUB_ISSUE_TITLE, GITHUB_LABELS, GITHUB_TOOLTIP_CONTENT, TWITTER */
 import GlobalEvents from 'vue-global-events'
 
 export default {
@@ -68,6 +63,7 @@ export default {
       githubRepo: GITHUB_REPO,
       githubIssueTitle: GITHUB_ISSUE_TITLE,
       githubLabels: GITHUB_LABELS,
+      githubTooltipContent: GITHUB_TOOLTIP_CONTENT,
       twitter: TWITTER
     }
   },
@@ -115,6 +111,20 @@ export default {
           this.selected = false
         }
       }, 10)
+    },
+    getHref() {
+      return `https://github.com/${this.githubOwner}/${
+        this.githubRepo
+      }/issues/new?title=${
+        this.githubIssueTitle
+      }&body=Hello!%0D%0DI've%20found%20an%20issue%20here:\`${encodeURI(
+        this.selectedText
+      )}\`%0D%0DPage%20reference:%20${
+        window.location.href
+      }&labels=${this.githubLabels.join()}`
+    },
+    redirectToGithub() {
+      return window.open(this.getHref())
     }
   }
 }

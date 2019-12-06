@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-selected-text-popup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A global plugin for Vuepress that creates a popup on selecting text!",
   "main": "index.js",
   "scripts": {

@@ -26,15 +26,6 @@ module.exports = {
 
 The plugin takes a number of options, which can be passed in with the plugin config in an options object:
 
-GITHUB: options.github || true,
-GITHUB_OWNER: options.githubOwner || '',
-GITHUB_REPO: options.githubRepo || '',
-GITHUB_ISSUE_TITLE: options.githubIssueTitle || '',
-GITHUB_LABELS: options.githubLabels || [],
-GITHUB_TOOLTIP_CONTENT:
-options.githubTooltipContent || 'Create a GitHub Issue!',
-TWITTER: options.twitter || true
-
 ```
 module.exports = {
   plugins: [
